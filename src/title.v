@@ -89,7 +89,7 @@ fn (game mut Game) title_load_failed(_error string) bool {
 }
 
 fn (game mut Game) prepare_game(subset &LevelSubset) bool {
-    level := subset.load_level('level2.lisp') or {
+    level := subset.load_level('level1.lisp') or {
         println(err)
         return game.title_load_failed(err)
     }
